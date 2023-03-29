@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="Calculator.css" />
+		<script></script>
+		<title>Calculator</title>
+	</head>
+	<body>
+		<main>
+			<section>
+				<input type="text" class="display-box" id="disp-box-one" />
+				<div class="display-box" id="disp-box-two"></div>
+			</section>
+			<section>
+				<div class="row-one">
+					<button class="function" id="clear-all-button" onclick="clearAll()">
+						AC
+					</button>
+					<button class="function" onclick="del()">DEL</button>
+					<button class="function" onclick="disp('/')">&#247;</button>
+				</div>
+				<div class="mid-rows-buttons">
+					<button onclick="disp(7)">7</button>
+					<button onclick="disp(8)">8</button>
+					<button onclick="disp(9)">9</button>
+					<button class="function" onclick="disp('*')">&#215;</button>
+					<button onclick="disp(4)">4</button>
+					<button onclick="disp(5)">5</button>
+					<button onclick="disp(6)">6</button>
+					<button class="function" onclick="disp('-')">-</button>
+					<button onclick="disp(1)">1</button>
+					<button onclick="disp(2)">2</button>
+					<button onclick="disp(3)">3</button>
+					<button class="function" onclick="disp('+')">+</button>
+				</div>
+				<div class="row-last">
+					<button onclick="disp('.')">.</button>
+					<button onclick="disp(0)">0</button>
+					<button class="function" id="equate-button" onclick="calc()">
+						=
+					</button>
+				</div>
+			</section>
+		</main>
+		<script src="Calculator.js"></script>
+	</body>
+</html>
